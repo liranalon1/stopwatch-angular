@@ -1,0 +1,50 @@
+/* digis style */
+#digits{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: #242424;
+    border-radius: 10px 10px 0 0;
+    box-shadow: inset 0px 4px 15px 2px #121212;
+    color:#7fda15;
+    font-size: 34px;
+
+    .digits-wrap{
+        
+        > span{
+            display: flex;
+            justify-content: flex-end;
+
+            &.sep{
+                width: 5px;
+                justify-content: center;
+            }
+        }
+
+        &.back{
+            opacity: 0.2;
+            position: absolute;
+            > span:not(.sep){
+                width: 36px;
+                -webkit-user-select: none;
+                user-select: none;
+
+                &.sep{
+
+                }
+            }
+        }
+
+        &.front{
+            position: relative;
+            > span:not(.sep){
+                width: 18px;
+
+                &.sep{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

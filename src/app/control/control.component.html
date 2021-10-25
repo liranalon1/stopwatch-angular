@@ -1,0 +1,19 @@
+<div id="control">
+    <button class="play" (click)="startCounting()">
+      <div *ngIf="!counterIsActive">
+        <i class="fas fa-play"></i>
+        <span>Play</span>
+      </div>
+      
+      <div *ngIf="counterIsActive">
+        <i class="fas fa-pause"></i>
+        <span>Pause</span>
+      </div>
+    </button>
+    <button class="add-current-time" [disabled]="!counterIsActive" (click)="getCurrentTime();">
+      <i class="far fa-clock"></i>
+    </button>
+    <button class="erase" (click)="eraseTimer();">
+      <i class="far fa-trash-alt"></i>
+    </button>
+</div>

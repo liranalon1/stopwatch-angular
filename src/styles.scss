@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "reset";
+
+@font-face {
+    font-family: "ds-digital";
+    src: url('./assets/fonts/ds_digital/DS-DIGII.TTF') format('truetype');
+}
+  
+body {
+    font-family: "ds-digital";
+    background: #333;
+}
+
+.wrapper{
+    width:300px;
+    margin:10px auto 0;
+}
+
+.digits-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > span{
+        
+    }
+
+    .sep{
+        margin: 0 5px;
+        font-size: 0.75em;
+        text-align: center;
+
+        &.dot{
+            margin-top: 5px;
+        }
+    }
+}

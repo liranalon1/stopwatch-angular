@@ -1,0 +1,20 @@
+<div id="digits">
+    <div class="digits-wrap back">
+      <span>88</span>
+      <span class="sep">:</span>
+      <span>88</span>
+      <span class="sep dot">.</span>
+      <span>88</span>
+    </div>
+
+    <div class="digits-wrap front">
+      <span>{{time.minutes[0]}}</span>
+      <span>{{time.minutes[1]}}</span>
+      <span class="sep"><span *ngIf="blinking">:</span></span>
+      <span>{{time.seconds[0]}}</span>
+      <span>{{time.seconds[1]}}</span>
+      <span class="sep dot"><span *ngIf="blinking">.</span></span>
+      <span>{{time.milliseconds[0]}}</span>
+      <span>{{time.milliseconds[1]}}</span>
+    </div>
+  </div>

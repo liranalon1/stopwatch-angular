@@ -1,0 +1,36 @@
+/* records style */
+#records{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 12px;
+
+    ul{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height:54px;
+            border-bottom:1px solid #606060;
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            .remove-item{
+                opacity: 0;
+                padding: 5px;
+                background: #ff1500;
+                font-size: 12px;
+                font-family: Arial;
+                cursor: pointer;
+            }
+
+            &:hover{
+                .remove-item{
+                    display: block;
+                    opacity: 1;
+                }  
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <!-- digits --->
+  <app-digits [blinking]="blinking" [time]="time"></app-digits>
+
+  <!-- control --->
+  <app-control [counterIsActive]="counterIsActive" (start)="startTimer()" (recordTime)="addCurrentTime()" (erase)="eraseTimer()"></app-control>
+
+  <!-- records --->
+  <app-records [timeRecords]="timeRecords" (updateGlobalStorage)="updatedStorage()"></app-records>
+</div>

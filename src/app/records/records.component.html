@@ -1,0 +1,15 @@
+<div id="records">
+    <ul>
+      <li *ngFor="let record of timeRecords;let i = index">
+        <div class="digits-wrap">
+          <span>{{record.minutes}}</span>
+          <span class="sep">:</span>
+          <span>{{record.seconds}}</span>
+          <span class="sep dot">.</span>
+          <span>{{record.milliseconds}}</span>
+        </div>
+        
+        <button class="remove-item" (click)="removeRecord(i)">REMOVE</button>
+      </li>
+    </ul>
+  </div>
